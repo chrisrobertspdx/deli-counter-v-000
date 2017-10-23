@@ -1,12 +1,11 @@
 katz_deli = []
 
 def line(deli)
-  case deli.size
-  when 1
-    return deli.first
-  when 2
-    return "#{deli.first} and #{deli.last}"
+  linArr = []
+  if deli.size == 0
+    return "The line is empty."
   else
-    return deli.take(deli.size-1).join(", ") + ", and #{deli.last}"
-  end
+    return deli.each_with_index.collect do |e,i|
+      "#{i+1}. #{e}."
+    end.join(' ')
 end
