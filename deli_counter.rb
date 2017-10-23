@@ -3,11 +3,11 @@ katz_deli = []
 def line(deli)
   linArr = []
   if deli.size == 0
-    puts "The line is empty."
+    puts "The line is currently empty."
   else
     result = deli.each_with_index.collect do |e,i|
       "#{i+1}. #{e}."
     end
-    puts result.join(' ')
+    puts "The line is currently: " + result.join(' ')
   end
 end
