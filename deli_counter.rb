@@ -10,4 +10,3 @@ def line(deli) {
     return deli.take(deli.size-1).join(", ") + ", and #{deli.last}"
   end
 end
-}
