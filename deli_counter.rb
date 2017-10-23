@@ -1,6 +1,6 @@
 katz_deli = []
 
-def line(deli) {
+def line(deli)
   case deli.size
   when 1
     return deli.first
