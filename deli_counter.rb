@@ -24,5 +24,5 @@ def now_serving(arr)
     puts "#{arr.first}, you are up!"
     arr.shift()
   end
-  
+
 end
